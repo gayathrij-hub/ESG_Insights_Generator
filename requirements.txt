@@ -14,3 +14,7 @@ plotly
 dash
 pytest
 tqdm
+sec-edgar
+psycopg2
+sentence_transformers
+faiss-cpu
