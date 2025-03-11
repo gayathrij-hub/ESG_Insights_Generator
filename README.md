@@ -34,12 +34,12 @@ The ESG Insights Generator provides automated sustainability analysis for any co
   ```pip install -r requirements.txt```
 
 4. Set up API Keys
-   * Anthropic API Key
-   * NewsData.io API key: https://newsdata.io/ (sign up for the free account API key)
+   * Anthropic API Key: Set variable as "ANTHROPIC_API_KEY"
+   * NewsData.io API key: https://newsdata.io/ (sign up for the free account API key) and set environment variable as "NEWS_API_KEY"
    Note: Set the API keys as environment variables to ensure precaution
    
 ## Running the Application
-1. Streamlit: ```streamlit run esg_streamlit.py```
+1. Streamlit: ```streamlit run esg_streamlit.py``` OR ```python -m streamlit run esg_streamlit.py```
 2. Using ESG Insights in CLI (Optional): ```python esg_insights.py```
 
 
