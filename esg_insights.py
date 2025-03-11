@@ -26,15 +26,17 @@ def query_anthropic(prompt, context):
     )
     
     # Make the API call. Adjust parameters like model name, max tokens, and temperature as needed.
-    response = client.completions(
-        prompt=anthropic_prompt,
-        model="claude-v1",         # You might choose a different variant if needed.
-        max_tokens_to_sample=500,
-        temperature=0.5,
+    response = client.messages.create(
+        model="claude-3-7-sonnet-20250219",         # You might choose a different variant if needed.
+        max_tokens=1000,
+        system="You are an ESG expert.",
+        messages = [
+            {"role": "user", "content": anthropic_prompt}
+        ]
     )
     
     # Return the generated completion from Anthropic's response.
-    return response["completion"]
+    return response.content[0].text
 
 def query_chatgpt(prompt, context):
     """
