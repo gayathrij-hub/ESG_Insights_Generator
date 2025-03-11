@@ -5,7 +5,6 @@ torch
 pandas
 numpy
 scikit-learn
-# spacy
 beautifulsoup4
 requests
 flask
@@ -18,3 +17,5 @@ sec-edgar
 psycopg2
 sentence_transformers
 faiss-cpu
+googlesearch-python
+pdfplumber
