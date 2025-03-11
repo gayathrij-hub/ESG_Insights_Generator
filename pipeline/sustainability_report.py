@@ -155,7 +155,7 @@ class ESGRAGRetriever:
         return response.choices[0].message.content
 
     
-    def query_rag(self, prompt, threshold=0.60, retrying=False):
+    def query_rag(self, prompt, threshold=0.50, retrying=False):
         """Retrieve sustainability insights using FAISS & GPT-4.
         
         - Uses FAISS to check if the prompt matches stored data.
